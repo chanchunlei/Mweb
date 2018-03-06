@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>客户</title>
+	<link rel="stylesheet" href="../css/customer.css">
+	<link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+	<script src="../js/screen.js"></script>
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<a href="javascript:;" onclick="javascript:history.back(-1);"><i class="iconfont icon-xiangzuo"></i></a>
+			客户
+		</nav>
+		<div class="inp">
+			<textarea placeholder="请填写反馈信息..."></textarea> 
+		</div>
+		<!-- 上传图片 -->
+        <div class="customer_pass">
+        	<div class="box">
+        	    <label for="camera">
+		    	    <input id="camera" type="file" accept="image/*" capture="camera">
+					<i class="iconfont icon-xiangji"></i>
+					<p>拍照上传</p>
+    			</label>
+        	</div>
+        	<div class="box">
+        	    <label for="imgs_camera">
+	        	    <input id="imgs_camera" type="file" accept="image/*">
+	    			<i class="iconfont icon-shangchuan1"></i>
+	    			<p>相册上传</p>
+    			</label>
+        	</div>
+        </div>
+        <div class="sub">
+        	<input type="button" value="提交反馈">
+        </div>	
+	</div>
+</body>
+</html>
