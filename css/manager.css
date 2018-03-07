@@ -1,0 +1,169 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+ul, ol { list-style:none; }
+html{ height: 100%; }
+a{ text-decoration: none; }
+body{
+    background-color: #eeeeee;
+    margin: 0 auto;
+    width: 7.5rem;
+    height: 100%;
+}
+.container{
+	width: 100%;
+	height: 100%;
+}
+.container>nav{
+    text-align: center;
+    line-height: 0.8rem;
+    color: #fff;
+    background-color: #3dd09a;
+	letter-spacing: 0.01rem;
+	font-size: 0.32rem;
+	font-weight: normal;
+	font-stretch: normal;
+	position: relative;
+}
+.container>nav>a{
+	position: absolute;
+	left: 0.1rem;
+	bottom: 0;
+	padding: 0 0.2rem;
+	color: #fff;
+	width: 0.4rem;
+	line-height: 0.8rem;
+}
+.nav{
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-size: 0.28rem;
+	color: #666;
+	letter-spacing: 0.01rem;
+	background-color: #fff;
+	position: relative;
+	border-bottom: 0.01rem solid #eee;
+}
+.nav>div{
+	width: 25%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+.nav>span{
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 25%;
+	height: 0.03rem;
+	background-color: #04a76b;
+}
+.active{
+    color: #04a76b;
+}
+.big_box{
+	width: 100%;
+	position: relative;
+}
+.f_box{
+	display: none;
+	width: 100%;
+}
+.on{
+	display: block;
+}
+.f_box>li{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	background-color: #fff;
+	padding-top: 0.2rem;
+	box-sizing: border-box;
+}
+.cover{
+	width: 2.4rem;
+	height: 2.4rem;
+}
+.cover>img{
+	height: 2.4rem;
+}
+.content{
+	width: 5.1rem;
+	padding: 0.1rem 0.15rem;
+	box-sizing: border-box;
+}
+.name{
+	font-size: 0.3rem;
+	color: #666;
+	line-height: 0.5rem;
+}
+.address{
+	font-size: 0.26rem;
+	color: #666;
+	line-height: 0.5rem;
+}
+.massage{
+	font-size: 0.26rem;
+	color: #666;
+	height: 0.7rem;
+	width: 100%;
+	overflow: hidden;
+}
+.date{
+	font-size: 0.23rem;
+	color: #999;
+	line-height: 0.7rem;
+}
+.overs{
+	padding: 0.2rem;
+}
+.covers{
+	width: 1.6rem;
+	height: 1.6rem;
+}
+.covers>img{
+	height: 1.6rem;
+}
+.msg{
+	width: 5.5rem;
+	height: 1.6rem;
+	position: relative;
+	padding: 0 0.1rem;
+	box-sizing: border-box;
+}
+.addre{
+	font-size: 0.28rem;
+	color: #666;
+	line-height: 0.5rem;
+}
+.do{
+	font-size: 0.26rem;
+	color: #999;
+	line-height: 0.5rem;
+}
+.msg>span{
+	position: absolute;
+	right: 0.2rem;
+	top: 0.2rem;
+	font-size: 0.28rem;
+	color: #999;
+}
+.line{
+	display: block;
+	height: 0.04rem;
+	border-radius: 0.1rem;
+	width: 100%;
+	background-color: #ccc;
+	margin-top: 0.4rem;
+	position: relative;
+}
+.line>span{
+	display: block;
+	width: 58%;
+	height: 0.04rem;
+	background-color: #3dd09a;
+	border-radius: 0.1rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
