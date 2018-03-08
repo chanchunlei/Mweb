@@ -3,7 +3,7 @@ ul, ol { list-style:none; }
 html{ height: 100%; }
 a{ text-decoration: none; }
 body{
-    background-color: #eeeeee;
+    background-color: #eee;
     margin: 0 auto;
     width: 7.5rem;
     height: 100%;
@@ -53,7 +53,7 @@ body{
 	display: block;
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: 0.02rem;
 	width: 25%;
 	height: 0.03rem;
 	background-color: #04a76b;
@@ -63,8 +63,10 @@ body{
 }
 .big_box{
 	width: 100%;
+	height: 100%;
 	position: relative;
 }
+/*客户反馈*/
 .f_box{
 	display: none;
 	width: 100%;
@@ -77,7 +79,7 @@ body{
 	display: flex;
 	justify-content: flex-start;
 	background-color: #fff;
-	padding-top: 0.2rem;
+	margin-top: 0.2rem;
 	box-sizing: border-box;
 }
 .cover{
@@ -89,7 +91,7 @@ body{
 }
 .content{
 	width: 5.1rem;
-	padding: 0.1rem 0.15rem;
+	padding: 0 0.15rem;
 	box-sizing: border-box;
 }
 .name{
@@ -114,8 +116,11 @@ body{
 	color: #999;
 	line-height: 0.7rem;
 }
-.overs{
+/*任务进度*/
+.f_box>.overs{
 	padding: 0.2rem;
+	margin-top: 0;
+	margin-bottom: 0.1rem;
 }
 .covers{
 	width: 1.6rem;
@@ -150,7 +155,7 @@ body{
 }
 .line{
 	display: block;
-	height: 0.04rem;
+	height: 0.05rem;
 	border-radius: 0.1rem;
 	width: 100%;
 	background-color: #ccc;
@@ -160,10 +165,180 @@ body{
 .line>span{
 	display: block;
 	width: 58%;
-	height: 0.04rem;
+	height: 0.05rem;
 	background-color: #3dd09a;
 	border-radius: 0.1rem;
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+/*发布任务*/
+.f_box_c{
+	height: 100%;
+	background-color: #fff;
+}
+.floor{
+	width: 100%;
+	color: #333;
+	line-height: 1.2rem;
+	font-size: 0.28rem;
+	letter-spacing: 0.01rem;
+	padding: 0 0.38rem;
+	box-sizing: border-box;
+}
+.floor>input{
+	width: 0.7rem;
+	text-align: center;
+	height: 0.33rem;
+	line-height: 0.33rem;
+	outline: none;
+}
+.shops_date{
+	width: 100%;
+	color: #333;
+	padding: 0 0.38rem;
+	box-sizing: border-box;
+}
+.shops_date>.title_task{
+	color: #999;
+	font-size: 0.26rem;
+}
+.shops_date>li{
+	width: 100%;
+	line-height: 0.7rem;
+	border-bottom: 0.01rem solid #eee;
+	font-size: 0.28rem;
+}
+/*修改默认样式*/
+.labels{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.inp_checkbox{
+    display: none;
+}
+.checkbox_style{
+    background-color:#fff;
+    border:1px solid #999999;
+    border-radius:4px;
+    display:inline-block;
+    height: 0.33rem;
+    vertical-align:middle;
+    width: 0.33rem;
+    line-height: 1;
+    box-sizing: border-box;
+    position: relative;
+}
+.inp_checkbox:checked + .checkbox_style:after{
+    background-color: #04a76b;
+    border:1px solid #04a76b;
+    border-radius: 4px;
+    content:"";
+    display: inline-block;
+    height:0.33rem;
+    width:0.33rem;
+    box-sizing: border-box;
+    position: relative;
+}
+span>.icon-duihao{
+    position: absolute;
+    top: 0.06rem;
+    left: 0.05rem;
+    color: #ffffff;
+    z-index: 4;
+    font-size: 0.25rem;
+}
+.inp_checkbox:checked + .checkbox_style{
+    border: none;
+}
+textarea{ 
+	resize:none; 
+	outline: none;
+	width: 100%;
+	border: none;
+	background-color: #fff;
+	font-size: 0.26rem;
+	color: #333;
+	height: 100%;
+	line-height: 0.5rem;
+	border: 0.01rem solid #eee;
+}
+.inp{
+	width: 100%;
+	height: 2.7rem;
+	margin-top: 0.3rem;
+	padding: 0 0.36rem;
+	color: #999;
+	box-sizing: border-box;
+	display: none;
+}
+.btn{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 1rem;
+	font-size: 0.34rem;
+	line-height: 1rem;
+	display: flex;
+	justify-content: space-between;
+	border-top: 0.01rem solid #eee;
+}
+.btn>input{
+	width: 50%;
+    text-align: center;
+    border: none;
+	outline: 0px;
+	-webkit-appearance: none;
+	background-color: #fff;
+	color: #999;
+}
+.btn>.inps{
+	background-color: #42cc99;
+	color: #fff; 
+}
+/*任务分类*/
+.give_task{
+	width: 100%;
+}
+.give_task>li{
+	width: 100%;
+	margin-bottom: 0.2rem;
+	padding: 0.2rem 0.38rem;
+	box-sizing: border-box;
+	background-color: #fff;
+	position: relative;
+}
+.location,.t_kind{
+	font-size: 0.26rem;
+	line-height: 0.5rem;
+	letter-spacing: 0.01rem;
+	color: #999999;
+}
+.loc_name,.h_do{
+	font-size: 0.28rem;
+	line-height: 0.4rem;
+	letter-spacing: 0.01rem;
+	color: #333;
+}
+.dates{
+	font-size: 0.2rem;
+	line-height: 0.4rem;
+	letter-spacing: 0.01rem;
+	color: #999;
+}
+.give_task>li>span{
+	display: block;
+	color: #fff;
+	font-size: 0.28rem;
+	width: 1.7rem;
+	line-height: 0.6rem;
+	text-align: center;
+	background-color: #3dd09a;
+	letter-spacing: 0.01rem;
+	border-radius: 0.04rem;
+	position: absolute;
+	right: 0.38rem;
+	bottom: 0.3rem;
 }

@@ -23,6 +23,7 @@
 			<span></span>
 		</div>
 		<div class="big_box">
+		    <!-- 客户反馈 -->
 			<ul class="f_box on">
 				<li>
 					<div class="cover"><img src="../imgs/f1.jpg" alt=""></div>
@@ -61,6 +62,7 @@
 					</div>
 				</li>
 			</ul>
+			<!-- 任务进度 -->
 			<ul class="f_box">
 				<li class="overs">
 					<div class="covers"><img src="../imgs/f5.jpg" alt=""></div>
@@ -108,10 +110,96 @@
 					</div>
 				</li>
 			</ul>
-			<div class="f_box"></div>
-			<div class="f_box"></div>
+			<!-- 发布任务 -->
+			<div class="f_box f_box_c">
+				<div class="floor">请输入楼层：<input type="number"> - <input type="number"> 栋 <input type="number"> - <input type="number"> 层</div>
+				 <ul class="shops_date">
+				   <li class="title_task">任务种类：</li>
+                   <li>
+                       <label class="labels">
+                           <span>浇水</span>
+                           <span>
+                               <input class="inp_checkbox" type="radio" name="inp_radio" value="0">
+                               <span class="checkbox_style "><i class="iconfont icon-duihao"></i></span>
+                           </span>
+                       </label>
+                   </li>
+                   <li>
+                       <label class="labels">
+                           <span>修叶</span>
+                           <span>
+                               <input class="inp_checkbox" type="radio" name="inp_radio" value="1">
+                               <span class="checkbox_style "><i class="iconfont icon-duihao"></i></span>
+                           </span>
+                       </label>
+                   </li>
+                   <li>
+                       <label class="labels">
+                           <span>施肥</span>
+                           <span>
+                               <input class="inp_checkbox" type="radio" name="inp_radio" value="2">
+                               <span class="checkbox_style"><i class="iconfont icon-duihao"></i></span>
+                           </span>
+                       </label>
+                   </li>
+                   <li>
+                       <label class="labels">
+                           <span>其他</span>
+                           <span>
+                               <input class="inp_checkbox" type="radio" name="inp_radio" value="3">
+                               <span class="checkbox_style "><i class="iconfont icon-duihao"></i></span>
+                           </span>
+                       </label>
+                   </li>
+               </ul>
+               <!-- 其他 -->
+               <div class="inp">
+					<textarea placeholder="请填写反馈信息..."></textarea> 
+			   </div>
+			   <div class="btn">
+					<input type="button" value="重置">
+					<input class="inps" type="button" value="发布">
+			   </div>
+			</div>
+			<div class="f_box">
+				<ul class="give_task">
+					<li>
+						<p class="location">位置：</p>
+						<p class="loc_name">1栋1层-1栋6层</p>
+						<p class="t_kind">任务类型：</p>
+						<p class="h_do">浇水；施肥；修叶；</p>
+						<p class="dates">日期：2018年03月06日</p>
+						<span ontouchstart="window.location.href='task.html'">分配任务</span>
+					</li>
+					<li>
+						<p class="location">位置：</p>
+						<p class="loc_name">1栋1层-1栋6层</p>
+						<p class="t_kind">任务类型：</p>
+						<p class="h_do">浇水；施肥；修叶；</p>
+						<p class="dates">日期：2018年03月06日</p>
+						<span ontouchstart="window.location.href='task.html'">分配任务</span>
+					</li>
+					<li>
+						<p class="location">位置：</p>
+						<p class="loc_name">1栋1层-1栋6层</p>
+						<p class="t_kind">任务类型：</p>
+						<p class="h_do">浇水；施肥；修叶；</p>
+						<p class="dates">日期：2018年03月06日</p>
+						<span ontouchstart="window.location.href='task.html'">分配任务</span>
+					</li>
+					<li>
+						<p class="location">位置：</p>
+						<p class="loc_name">1栋1层-1栋6层</p>
+						<p class="t_kind">任务类型：</p>
+						<p class="h_do">浇水；施肥；修叶；</p>
+						<p class="dates">日期：2018年03月06日</p>
+						<span ontouchstart="window.location.href='task.html'">分配任务</span>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
+	
 </body>
 <script>
 	$(function(){
@@ -120,6 +208,13 @@
 			$('.nav>span').css({'transform':'translateX('+n*100+'%)','transition':'0.2s'});
 			$('.nav>div').removeClass("active").eq(n).addClass("active");
 			$(".big_box>.f_box").removeClass("on").eq(n).addClass("on");
+		})
+		$(".inp_checkbox").click(function(){
+			if($(this).val() == 3){
+				$(".inp").css("display","block")
+			}else{
+				$(".inp").css("display","none")
+			}
 		})
 	})
 </script>
