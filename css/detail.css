@@ -32,30 +32,6 @@ body{
 	width: 0.4rem;
 	line-height: 0.8rem;
 }
-.floor_box{
-	width: 100%;
-	padding: 0 0.2rem;
-	box-sizing: border-box;
-	background-color: #fff;
-}
-.floor{
-	width: 100%;
-	color: #333;
-	line-height: 1.2rem;
-	font-size: 0.3rem;
-	letter-spacing: 0.01rem;
-	padding: 0 0.18rem;
-	box-sizing: border-box;
-	border-bottom: 0.01rem solid #eee;
-}
-.floor>input{
-	width: 0.7rem;
-	text-align: center;
-	height: 0.33rem;
-	line-height: 0.33rem;
-	outline: 0px;
-	-webkit-appearance: none;
-}
 .list{
 	width: 100%;
 	font-size: 0.3rem;
@@ -90,20 +66,14 @@ body{
 	height: 1rem;
 	font-size: 0.34rem;
 	line-height: 1rem;
-	display: flex;
-	justify-content: space-between;
-	border-top: 0.01rem solid #999;
 }
 .btn>input{
-	width: 50%;
+	width: 100%;
+	line-height: 1rem;
     text-align: center;
     border: none;
 	outline: 0px;
 	-webkit-appearance: none;
-	background-color: #fff;
-	color: #999;
-}
-.btn>.inps{
 	background-color: #42cc99;
 	color: #fff; 
 }
