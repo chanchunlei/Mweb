@@ -32,47 +32,48 @@ body{
 	width: 0.4rem;
 	line-height: 0.8rem;
 }
-.give_task{
+.list{
 	width: 100%;
-}
-.give_task>li{
-	width: 100%;
-	margin-bottom: 0.2rem;
-	padding: 0.2rem 0.38rem;
-	box-sizing: border-box;
-	background-color: #fff;
-	position: relative;
-}
-.location,.t_kind{
-	font-size: 0.26rem;
-	line-height: 0.5rem;
-	letter-spacing: 0.01rem;
-	color: #999999;
-}
-.loc_name,.h_do{
-	font-size: 0.28rem;
-	line-height: 0.4rem;
-	letter-spacing: 0.01rem;
+	font-size: 0.3rem;
 	color: #333;
 }
-.dates{
-	font-size: 0.2rem;
-	line-height: 0.4rem;
-	letter-spacing: 0.01rem;
-	color: #999;
+.list>li{
+	width: 100%;
+	line-height: 1rem;
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+	margin-bottom: 0.2rem;
+	padding: 0 0.38rem;
+	box-sizing: border-box;
 }
-.give_task>li>span{
+.inp_box{
 	display: block;
-	color: #fff;
-	font-size: 0.28rem;
-	width: 1.7rem;
-	line-height: 0.6rem;
-	text-align: center;
-	background-color: #3dd09a;
-	letter-spacing: 0.01rem;
-	border-radius: 0.04rem;
-	position: absolute;
-	right: 0.38rem;
-	bottom: 0.3rem;
-	cursor: pointer;
+	width: 70%;
+	text-align: right;
+}
+.inp_box>input{
+	outline: none;
+	border: none;
+	text-align: right;
+	font-size: 0.26rem;
+}
+.btn{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 1rem;
+	line-height: 1rem;
+}
+.btn>input{
+	width: 100%;
+	line-height: 1rem;
+    text-align: center;
+    border: none;
+	outline: 0px;
+	-webkit-appearance: none;
+	background-color: #42cc99;
+	color: #fff; 
+	font-size: 0.34rem;
 }

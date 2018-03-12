@@ -49,11 +49,12 @@ body{
 	border-bottom: 0.01rem solid #eee;
 }
 .floor>input{
-	width: 0.7rem;
+	width: 0.6rem;
 	text-align: center;
 	height: 0.33rem;
 	line-height: 0.33rem;
-	outline: none;
+	outline: 0px;
+	-webkit-appearance: none;
 }
 .list{
 	width: 100%;
@@ -87,7 +88,6 @@ body{
 	bottom: 0;
 	left: 0;
 	height: 1rem;
-	font-size: 0.34rem;
 	line-height: 1rem;
 	display: flex;
 	justify-content: space-between;
@@ -96,11 +96,13 @@ body{
 .btn>input{
 	width: 50%;
     text-align: center;
-    border: none;
+    border: 0px;
 	outline: 0px;
 	-webkit-appearance: none;
+	border-radius: 0px;
 	background-color: #fff;
 	color: #999;
+	font-size: 0.34rem;
 }
 .btn>.inps{
 	background-color: #42cc99;

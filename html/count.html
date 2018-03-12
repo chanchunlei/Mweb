@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>统计</title>
+	<script>
+        document.write('<link rel="stylesheet" href="../css/count.css?time='+new Date().getTime()+'">');
+    </script>
+	<link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+	<script src="../js/screen.js"></script>
+	<script src="../js/jquery.js"></script>
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<a href="javascript:;" onclick="javascript:history.back(-1);"><i class="iconfont icon-xiangzuo"></i></a>
+			统计
+		</nav>
+		<div class="nav">
+			<div class="active">未完成</div>
+			<div>已完成</div>
+			<span></span>
+		</div>
+		<div class="big_box">
+			<!-- 任务进度 -->
+			<ul class="f_box on">
+				<li class="overs">
+					<div class="covers"><img src="../imgs/f5.jpg" alt=""></div>
+					<div class="msg">
+						<p class="addre">2栋5层花卉浇水任务</p>
+						<p class="do">完成度</p>
+						<span>58%</span>
+						<p class="line"><span></span></p>
+					</div>
+				</li>
+				<li class="overs">
+					<div class="covers"><img src="../imgs/f6.jpg" alt=""></div>
+					<div class="msg">
+						<p class="addre">2栋5层花卉浇水任务</p>
+						<p class="do">完成度</p>
+						<span>58%</span>
+						<p class="line"><span></span></p>
+					</div>
+				</li>
+				<li class="overs">
+					<div class="covers"><img src="../imgs/f7.jpg" alt=""></div>
+					<div class="msg">
+						<p class="addre">2栋5层花卉浇水任务</p>
+						<p class="do">完成度</p>
+						<span>58%</span>
+						<p class="line"><span></span></p>
+					</div>
+				</li>
+				<li class="overs">
+					<div class="covers"><img src="../imgs/f8.jpg" alt=""></div>
+					<div class="msg">
+						<p class="addre">2栋5层花卉浇水任务</p>
+						<p class="do">完成度</p>
+						<span>58%</span>
+						<p class="line"><span></span></p>
+					</div>
+				</li>
+				<li class="overs">
+					<div class="covers"><img src="../imgs/f9.jpg" alt=""></div>
+					<div class="msg">
+						<p class="addre">2栋5层花卉浇水任务</p>
+						<p class="do">完成度</p>
+						<span>58%</span>
+						<p class="line"><span></span></p>
+					</div>
+				</li>
+			</ul>
+			<!-- 任务进度 -->
+			<ul class="f_box">
+				<li class="overs">
+					<div class="covers"><img src="../imgs/f5.jpg" alt=""></div>
+					<div class="msg">
+						<p class="addre">2栋5层花卉浇水任务</p>
+						<p class="do_well">已完成</p>
+						<span>100%</span>
+						<p class="line"><span class="done"></span></p>
+					</div>
+				</li>
+				<li class="overs">
+					<div class="covers"><img src="../imgs/f6.jpg" alt=""></div>
+					<div class="msg">
+						<p class="addre">2栋5层花卉浇水任务</p>
+						<p class="do_well">已完成</p>
+						<span>100%</span>
+						<p class="line"><span class="done"></span></p>
+					</div>
+				</li>
+				<li class="overs">
+					<div class="covers"><img src="../imgs/f7.jpg" alt=""></div>
+					<div class="msg">
+						<p class="addre">2栋5层花卉浇水任务</p>
+						<p class="do_well">已完成</p>
+						<span>100%</span>
+						<p class="line"><span class="done"></span></p>
+					</div>
+				</li>
+				<li class="overs">
+					<div class="covers"><img src="../imgs/f8.jpg" alt=""></div>
+					<div class="msg">
+						<p class="addre">2栋5层花卉浇水任务</p>
+						<p class="do_well">已完成</p>
+						<span>100%</span>
+						<p class="line"><span class="done"></span></p>
+					</div>
+				</li>
+				<li class="overs">
+					<div class="covers"><img src="../imgs/f9.jpg" alt=""></div>
+					<div class="msg">
+						<p class="addre">2栋5层花卉浇水任务</p>
+						<p class="do_well">已完成</p>
+						<span>100%</span>
+						<p class="line"><span class="done"></span></p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+<script>
+	$(function(){
+		$('.nav>div').click(function(){
+			var n = $(this).index();
+			$('.nav>span').css({'transform':'translateX('+n*100+'%)','transition':'0.2s'});
+			$('.nav>div').removeClass("active").eq(n).addClass("active");
+			$(".big_box>.f_box").removeClass("on").eq(n).addClass("on");
+		})
+		
+	})
+</script>
+</html>

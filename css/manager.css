@@ -187,11 +187,12 @@ body{
 	box-sizing: border-box;
 }
 .floor>input{
-	width: 0.7rem;
+	width: 0.6rem;
 	text-align: center;
 	height: 0.33rem;
 	line-height: 0.33rem;
-	outline: none;
+	outline: 0px;
+	-webkit-appearance: none;
 }
 .shops_date{
 	width: 100%;
@@ -279,11 +280,10 @@ textarea{
 	bottom: 0;
 	left: 0;
 	height: 1rem;
-	font-size: 0.34rem;
 	line-height: 1rem;
 	display: flex;
 	justify-content: space-between;
-	border-top: 0.01rem solid #eee;
+	border-top: 0.02rem solid #e7e7e7;
 }
 .btn>input{
 	width: 50%;
@@ -293,6 +293,7 @@ textarea{
 	-webkit-appearance: none;
 	background-color: #fff;
 	color: #999;
+	font-size: 0.34rem;
 }
 .btn>.inps{
 	background-color: #42cc99;

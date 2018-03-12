@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<title>首页</title>
-	<link rel="stylesheet" href="../css/index.css">
+    <script>
+        document.write('<link rel="stylesheet" href="../css/index.css?time='+new Date().getTime()+'">');
+    </script>
 	<script src="../js/screen.js"></script>
 </head>
 <body>
@@ -37,8 +39,8 @@
             				<p>操作员</p>
             		    </a>
             		</li>
-            		<li class="pass">
-            		    <a href="">
+            		<li ontouchstart="window.location.href='count.html'" class="pass">
+            		    <a href="javascript:;">
             		    	<img src="../imgs/2.png" alt="">
             				<p>统计</p>
             		    </a>
@@ -74,4 +76,8 @@
             </div>
         </div>
 </body>
+<script>
+    var timestamp = Date.parse( new Date());
+    console.log(timestamp)
+</script>
 </html>
