@@ -53,9 +53,9 @@ body{
 	display: block;
 	position: absolute;
 	left: 0;
-	bottom: 0.02rem;
+	bottom: 0rem;
 	width: 25%;
-	height: 0.03rem;
+	height: 0.04rem;
 	background-color: #04a76b;
 }
 .active{
@@ -63,7 +63,7 @@ body{
 }
 .big_box{
 	width: 100%;
-	height: 100%;
+	height: calc(100% - 1.6rem);
 	position: relative;
 }
 /*客户反馈*/
@@ -155,7 +155,7 @@ body{
 }
 .line{
 	display: block;
-	height: 0.05rem;
+	height: 3px;
 	border-radius: 0.1rem;
 	width: 100%;
 	background-color: #ccc;
@@ -165,7 +165,7 @@ body{
 .line>span{
 	display: block;
 	width: 58%;
-	height: 0.05rem;
+	height: 3px;
 	background-color: #3dd09a;
 	border-radius: 0.1rem;
 	position: absolute;
